@@ -1,0 +1,1419 @@
+/* Estilos Generales */
+@fuente-principal: "Roboto", "sans-serif";
+@fuente-secundaria: "Cardo", "serif";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: @fuente-principal;
+    font-size: 1em;
+}
+
+header{
+
+    .menu-web{
+        margin: auto;
+        width: 85.41%;
+        min-height: 10.62em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .imagen-logo{
+            width: 25.88%;
+            cursor: pointer;
+    
+            img{
+                width: 100%;
+            }
+        }
+    
+        .menu{
+            height: 1.56em;
+    
+            li{
+                float: left;
+                list-style: none;
+                margin: 0rem 2.18em 0rem 2.18em;
+    
+                a{
+                    display: block;
+                    font-size: 1.37em;
+                    font-weight: 500;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .menu-movil{
+        margin: auto;
+        width: 86.97%;
+        min-height: 10.62em;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+
+        .imagen-logo{
+            width: 25.41%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .menu-hamburguesa{
+            width: 4.49%;
+            cursor: pointer;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .menu-slide{
+            position: fixed;
+            top: 10.62em;
+            left: -50%;
+            width: 50%;
+            border-top: 1px solid #E2E2E2;
+            background-color: white;
+            text-align: center;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+            &.active{
+                left: 0;
+            }
+
+            li{
+                list-style: none;
+
+                a{
+                    display: block;
+                    margin: auto;
+                    padding: .8215em 0;
+                    width: 90%;
+                    border-top: 1px solid #E2E2E2;
+                    font-size: 1.87em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: black;
+                }
+            }
+
+            li:first-child{
+                a{
+                    border-top: none;
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    margin: auto;
+    width: 100%;
+    height: 64.25em;
+    overflow: hidden;
+
+    .slider{
+        display: flex;
+        justify-content: flex-start;
+        width: 300%;
+        height: 100%;
+
+        .slide{
+            display: flex;
+            align-items: center;
+            width: 33.33%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+
+            &.banner1{
+                background-image: url(../img/Banners-Portada/Macbook/Banner\ Portada\ 1.jpg);
+            }
+
+            &.banner2{
+                background-image: url(../img/Banners-Portada/Macbook/Banner\ Portada\ 2.jpg);
+            }
+
+            &.banner3{
+                background-image: url(../img/Banners-Portada/Macbook/Banner\ Portada\ 3.jpg);
+            }
+
+            .banner-titular{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 12.5em;
+                background-color: rgba(75, 75, 75, .8);
+                border-top: .25em solid #FFE207;
+                border-bottom: .25em solid #FFE207;
+                text-align: center;
+
+                h1{
+                    max-width: 70%;
+                    font-family: @fuente-secundaria;
+                    font-size: 2em;
+                    color: white;
+                    letter-spacing: .2rem;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    max-width: 75%;
+                    font-family: @fuente-secundaria;
+                    font-size: 2em;
+                    color: white;
+                    letter-spacing: .2rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .slide:last-child{
+            background-position: left;
+        }
+    }
+}
+
+.introduccion{
+    margin: auto;
+    width: 100%;
+    height: 40.62em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .columna-izquierda{
+        width: 42.39%;
+
+        img{
+            height: 40.62em;
+            background-image: url(../img/Home/Macbook/Banner\ Introduccion.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .columna-derecha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 57.60%;
+        text-align: left;
+
+        h2{
+            width: 72%;
+            font-size: 1.62em;
+            font-weight: 400;
+        }
+
+        p{
+            margin-top: 2em;
+            width: 72%;
+            font-size: 1.62em;
+            font-weight: 400;
+        }
+    }
+}
+
+.nuestro-menu{
+    margin: auto;
+    width: 100%;
+    height: 158em;
+
+    .introduccion-menu{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 64.25em;
+        background-image: url(../img/Home/Macbook/Banner\ Menu.jpg);
+        background-position: center;
+        background-size: cover;
+
+        .banner-comida{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 12.56em;
+            background-color: rgba(75, 75, 75, .8);
+            border-top: .25em solid #FFE207;
+            border-bottom: .25em solid #FFE207;
+            text-align: center;
+
+            h3{
+                max-width: 58%;
+                font-family: @fuente-secundaria;
+                font-size: 2em;
+                font-weight: 400;
+                color: white;
+                letter-spacing: .2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .encabezado-menu{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 25em;
+
+        h3{
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-transform: uppercase;
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 5.31em;
+
+            li{
+                list-style: none;
+                margin: 0 3.59em;
+                padding: 1.25em 1.87em;
+
+                a{
+                    display: block;
+                    font-size: 2em;
+                    font-weight: 500;
+                    color: black;
+                    letter-spacing: .15rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                &.active{
+                    border-bottom: .25em solid #989898;
+                }
+            }
+        }
+
+    
+    }
+
+    .contenido-menu{
+        margin: auto;
+        width: 100%;
+        height: 68.75em;
+
+        >div{
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+
+        .active{
+            display: block;
+        }
+
+        >div{
+            display: none;
+            margin: auto;
+            width: 71.04%;
+            height: 62.81em;
+            background-color: white;
+            border: .25em solid #989898;
+
+            .fila{
+                margin: auto;
+                display: flex;
+                margin-top: 4.37em;
+                width: 82.11%;
+                height: 11em;
+                border-bottom: .25em solid #C7C7C7;
+
+                .producto{
+                    width: 86.25%;
+                    height: 100%;
+
+                    h4{
+                        font-size: 2em;
+                        font-weight: 400;
+                    }
+
+                    p{
+                        margin-top: 1.7em;
+                        width: 79.5%;
+                        font-size: 1.5em;
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+
+                .precio{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 13.75%;
+                    height: 100%;
+                    text-align: center;
+
+                    p{
+                        font-size: 4em;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .fila:nth-child(4){
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.nuestras-sucursales{
+    margin: auto;
+    width: 100%;
+    height: 73.43em;
+    text-align: center;
+
+    .sucursales{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20.31em;
+
+        h3{
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-transform: uppercase;
+        }
+
+        ul{
+            margin-top: 5.31em;
+            display: flex;
+            justify-content: space-between;
+            width: 71.87%;
+
+            li{
+                list-style: none;
+                padding: 1.25em 1.87em 1.25em 1.87em;
+
+                a{
+                    display: block;
+                    font-size: 2em;
+                    font-weight: 500;
+                    color: black;
+                    letter-spacing: .15rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                &.active{
+                    border-bottom: .25em solid #989898;
+                }
+            }
+        }
+    }
+
+    .contenido-sucursales{
+        margin: auto;
+        width: 100%;
+        height: 53.12em;
+
+        .active{
+            display: flex;
+        }
+
+        >div{
+            display: none;
+            justify-content: space-between;
+            margin: auto;
+            width: 85.41%;
+            height: 85.88%;
+
+            .background-sucursal{
+                width: 32.68%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+
+                .sucursal{
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(64, 64, 64, .9);
+                    color: white;
+
+                    h4{
+                        display: inline-block;
+                        margin-top: 27.98%;
+                        padding: 5.22% 10.44% 5.22% 10.44%;
+                        font-size: 2.62em;
+                        text-transform: uppercase;
+                        border: .25em solid white;
+                    }
+
+                    p{
+                        margin-top: 11.19%;
+                        font-size: 1.87em;
+                    }
+                }
+            }
+        }
+
+        >div:nth-child(1){
+
+            .background-sucursal:nth-child(1){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 1.jpg);
+            }
+
+            .background-sucursal:nth-child(2){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 2.jpg);
+            }
+
+            .background-sucursal:nth-child(3){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 3.jpg);
+            }
+        }
+
+        >div:nth-child(2){
+
+            .background-sucursal:nth-child(1){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 4.jpg);
+            }
+
+            .background-sucursal:nth-child(2){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 5.jpg);
+            }
+
+            .background-sucursal:nth-child(3){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 6.jpg);
+            }
+        }
+
+        >div:nth-child(3){
+
+            .background-sucursal:nth-child(1){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 7.jpg);
+            }
+
+            .background-sucursal:nth-child(2){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 8.jpg);
+            }
+
+            .background-sucursal:nth-child(3){
+                background-image: url(../img/Restaurantes/Macbook/Restaurante\ 9.jpg);
+            }
+        }
+    }
+}
+
+.formulario{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64.25em;
+
+    .imagen-formulario{
+        width: 44.01%;
+        height: 100%;
+        background-image: url(../img/Formulario/Macbook/imagen-formulario.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .datos-formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 55.99%;
+        height: 73.24%;
+
+        h3{
+            padding-left: 11.44%;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: .3rem;
+            text-transform: uppercase;
+        }
+
+        .form{
+            display: flex;
+
+            .columna{
+                width: 36.27%;
+                height: 35.56em;
+    
+                &.izquierda{
+                    margin-left: 11.44%;
+                }
+    
+                &.derecha{
+                    margin-left: 11.16%;
+    
+                    select{
+                        width: 30%;
+                    }
+                }
+    
+                label{
+                    display: block;
+                    margin-bottom: 4.1%;
+                    font-size: 1.43em;
+                    font-weight: 400;
+                }
+    
+                input[type="text"],
+                input[type="email"],
+                input[type="time"]{
+                    margin-bottom: 15.42%;
+                    height: 8.08%;
+                    font-size: 1.43em;
+                    border: none;
+                }
+    
+                input[type="text"],
+                input[type="email"]{
+                    width: 100%;
+                    border: .0625em solid black;
+                }
+    
+                select{
+                    width: 65%;
+                    height: 8.08%;
+                    font-size: 1.43em;
+                    border: .0625em solid black;
+                }   
+    
+                input[type="time"]{
+                    width: 30%;
+                    font-family: @fuente-principal;
+                    border: .0625em solid black;
+                }
+    
+                input[type="submit"]{
+                    margin-top: 27.92%;
+                    padding: 2.2% 8.71% 2.2% 8.71%;
+                    font-family: Helvetica, sans-serif;
+                    font-size: 1.87em;
+                    font-weight: 600;
+                    color: white;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 100px;
+                    background-color: black;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+    
+                    &:hover{
+                        background-color: red;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .formulario-movil{
+        display: none;
+    }
+}
+
+.footer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18.75em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #2B2B2B;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 69.73%;
+
+        li{
+            list-style: none;
+
+            a{
+                display: block;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    p{
+        margin-top: 5.62em;
+    }
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1600px){
+
+    body{
+        font-size: .83em;
+    }
+}
+
+@media all and (max-width: 1280px){
+
+    body{
+        font-size: .66em;
+    }
+}
+
+@media all and (max-width: 1024px){
+    
+    body{
+        font-size: .53em;
+    }
+}
+
+@media all and (max-width: 870px){
+
+    body{
+        font-size: .45em;
+    }
+}
+
+@media all and (max-width: 768px){
+    body{
+        font-size: .4em;
+    }
+
+    header{
+        .menu-web{
+            display: none;
+        }
+
+        .menu-movil{
+            display: flex;
+        }
+    }
+
+    .banner{
+        height: 78.12em;
+
+        .slider{
+
+            .slide{
+
+                &.banner1{
+                    background-image: url(../img/Banners-Portada/iPad/Banner\ Portada\ 1.jpg);
+                }
+
+                &.banner2{
+                    background-image: url(../img/Banners-Portada/iPad/Banner\ Portada\ 2.jpg);
+                }
+
+                &.banner3{
+                    background-image: url(../img/Banners-Portada/iPad/Banner\ Portada\ 3.jpg);
+                }
+
+                .banner-titular{
+                    height: 13.28em;
+
+                    h1{
+                        letter-spacing: .1rem;
+                    }
+
+                    p{
+                        letter-spacing: .1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .introduccion{
+        height: 45.31em;
+
+        .columna-izquierda{
+            width: 47.39%;
+
+            img{
+                height: 45.31em;
+                background-image: url(../img/Home/iPad/Banner\ Introducción.jpg);
+            }
+        }
+
+        .columna-derecha{
+            width: 52.61%;
+        }
+    }
+
+    .nuestro-menu{
+        height: 171.56em;
+
+        .introduccion-menu{
+            height: 78.12em;
+            background-image: url(../img/Home/iPad/Banner\ Menu.jpg);
+
+            .banner-comida{
+
+                h3{
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+
+        .encabezado-menu{
+            height: 25em;
+
+            h3{
+                letter-spacing: .1em;
+            }
+
+            ul{
+                li{
+                    a{
+                        letter-spacing: .075em;
+                    }
+                }
+            }
+        }
+
+        .contenido-menu{
+            
+            >div{
+                width: 71.35%;
+            }
+        }
+    }
+
+    .nuestras-sucursales{
+        
+        .sucursales{
+            height: 21.25em;
+
+            h3{
+                letter-spacing: .1rem;
+            }
+
+            ul{
+                li{
+                    a{
+                        letter-spacing: .075em;
+                    }
+                }
+            }
+        }
+
+        .contenido-sucursales{
+            height: 52.18em;
+
+            >div{
+                width: 86.97%;
+                height: 87.42%;
+
+                .background-sucursal{
+                    width: 31.73%;
+                    
+                    .sucursal{
+
+                        h4{
+                            margin-top: 25.94%;
+                            font-size: 2.5em;
+                        }
+                        p{
+                            margin-top: 11.79%;
+                        }
+                    }
+                }
+            }
+
+            >div:nth-child(1){
+
+                .background-sucursal:nth-child(1){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 1.jpg);
+                }
+
+                .background-sucursal:nth-child(2){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 2.jpg);
+                }
+
+                .background-sucursal:nth-child(3){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 3.jpg);
+                }
+            }
+
+            >div:nth-child(2){
+
+                .background-sucursal:nth-child(1){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 4.jpg);
+                }
+
+                .background-sucursal:nth-child(2){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 5.jpg);
+                }
+
+                .background-sucursal:nth-child(3){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 6.jpg);
+                }
+            }
+
+            >div:nth-child(3){
+
+                .background-sucursal:nth-child(1){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 7.jpg);
+                }
+
+                .background-sucursal:nth-child(2){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 8.jpg);
+                }
+
+                .background-sucursal:nth-child(3){
+                    background-image: url(../img/Restaurantes/iPad/Restaurante\ 9.jpg);
+                }
+            }
+        }
+    }
+
+    .formulario{
+
+        .imagen-formulario{
+            width: 46.09%;
+            background-image: url(../img/Formulario/iPad/imagen-formulario.jpg);
+        }
+
+        .datos-formulario{
+            width: 53.90%;
+            height: 72.26%;
+
+            h3{
+                letter-spacing: .1rem;
+            }
+        }
+    }
+
+    .footer{
+        height: 18.75em;
+        font-size: 1.25em;
+
+        ul{
+            width: 70.44%;
+        }
+
+        p{
+            margin-top: 5.46em;
+        }
+    }
+}
+
+@media all and (max-width: 660px){
+
+    body{
+        font-size: .34em;
+    }
+}
+
+@media all and (max-width: 591px){
+
+    body{
+        font-size: .3em;
+    }
+
+    .introduccion{
+        height: 53.75em;
+
+        .columna-izquierda{
+            display: none;
+        }
+
+        .columna-derecha{
+            width: 100%;
+            text-align: center;
+
+            h2{
+                width: 81.15%;
+                font-size: 2.5em;
+            }
+
+            p{
+                width: 81.15%;
+                font-size: 2.5em;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 414px){
+
+    body{
+        font-size: .21em;
+    }
+
+    header{
+
+        .menu-movil{
+            width: 85.5%;
+            min-height: 17.85em;
+
+            .imagen-logo{
+                width: 41.96%;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .menu-hamburguesa{
+                width: 9.03%;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .menu-slide{
+                top: 17.85em;
+                left: -75%;
+                width: 75%;
+
+                li{
+
+                    a{
+                        padding: .80em 0;
+                        font-size: 2.97em;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner{
+        height: 119.04em;
+
+        .slider{
+            .slide{
+                &.banner1{
+                    background-image: url(../img/Banners-Portada/iPhone/Banner\ Portada\ 1.jpg);
+                }
+
+                &.banner2{
+                    background-image: url(../img/Banners-Portada/iPhone/Banner\ Portada\ 2.jpg);
+                }
+
+                &.banner3{
+                    background-image: url(../img/Banners-Portada/iPhone/Banner\ Portada\ 3.jpg);
+                }
+
+                .banner-titular{
+                    height: 40em;
+
+                    h1{
+                        max-width: 85%;
+                        font-size: 4.16em;
+                    }
+
+                    p{
+                        font-size: 4.16em;
+                    }
+                }
+            }
+        }
+    }
+
+    .introduccion{
+        height: 76.78em;
+
+        .columna-derecha{
+
+            h2{
+                font-size: 3.57em;
+            }
+
+            p{
+                font-size: 3.57em;
+            }
+        }
+    }
+
+    .nuestro-menu{
+        height: 244.64em;
+
+        .introduccion-menu{
+            height: 119.04em;
+            background-image: url(../img/Home/iPhone/Banner\ Menu.jpg);
+
+            .banner-comida{
+                height: 40em;
+
+                h3{
+                    max-width: 67.63%;
+                    font-size: 4.16em;
+                }
+            }
+        }
+
+        .encabezado-menu{
+            height: 29.46em;
+
+            h3{
+                font-size: 4.46em;
+            }
+
+            ul{
+                li{
+                    a{
+                        font-size: 2.38em;
+                    }
+                }
+            }
+        }
+
+        .contenido-menu{
+            height: 90.17%;
+
+            >div{
+                width: 80.67%;
+                height: 87.20em;
+
+                .fila{
+                    width: 80.83%;
+                    height: 16.07em;
+
+                    .producto{
+                        
+                        h4{
+                            font-size: 3.27em;
+                        }
+
+                        p{
+                            margin-top: 1.6em;
+                            width: 90%;
+                            font-size: 2.38em;
+                        }
+                    }
+
+                    .precio{
+
+                        p{
+                            font-size: 4.76em;
+                        }
+                    }
+                }
+
+                /*.caja-vinos{
+                    display: block;
+                    height: 229.16em;
+                    border: .29em solid #989898;
+                    background-color: aquamarine;
+
+                    .columna-vinos{
+                        display: block;
+                        margin: auto;
+                        margin-top: 4.46em;
+                        width: 74.85%;
+                        height: 110.11em;
+                        border-right: none;
+
+                        .fila-vinos{
+                            margin: auto;
+                            margin-bottom: 4.22em;
+                            width: 100%;
+                            height: 18.45em;
+                            border-bottom: .29em solid #C7C7C7;
+
+                            .vino{
+                                margin-left: 0;
+                                width: 65%;
+
+                                h4{
+                                    font-size: 3.57em;
+                                }
+
+                                p{
+                                    margin-top: 1.2em;
+                                    font-size: 2.67em;
+                                }
+                            }
+
+                            .precio-vino{
+                                width: 35%;
+
+                                p{
+                                    font-size: 5.95em;
+                                }
+                            }
+                        }
+                    }
+
+                    .columna-vinos:last-child{
+                        width: 74.85%;
+                    }
+                }*/
+            }
+
+            /*>div:nth-child(3){
+                border: none;
+            }*/
+        }
+    }
+
+    .nuestras-sucursales{
+        height: 341.36em;
+
+        .sucursales{
+            height: 52.67em;
+
+            h3{
+                font-size: 4.46em;
+            }
+
+            ul{
+                margin-top: 5.95em;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                height: 55.93%;
+
+                li{
+                    padding: 1.78em 2.67em 1.78em 2.67em;
+
+                    a{
+                        font-size: 2.97em;
+                    }
+                }
+            }
+        }
+
+        .contenido-sucursales{
+            height: 288.69em;
+
+            >div{
+                flex-direction: column;
+                width: 80.67%;
+                height: 96.90%;
+
+                .background-sucursal{
+                    width: 100%;
+                    height: 31.91%;
+
+                    .sucursal{
+
+                        h4{
+                            margin-top: 13.33%;
+                            padding: 2.39% 4.79% 2.39% 4.79%;
+                            font-size: 4.16em;
+                        }
+
+                        p{
+                            margin-top: 8.98%;
+                            font-size: 3.57em;
+                        }
+                    }
+                }
+            }
+
+            >div:nth-child(1){
+
+                .background-sucursal:nth-child(1){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 1.jpg);
+                }
+
+                .background-sucursal:nth-child(2){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 2.jpg);
+                }
+
+                .background-sucursal:nth-child(3){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 3.jpg);
+                }
+            }
+
+            >div:nth-child(2){
+
+                .background-sucursal:nth-child(1){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 4.jpg);
+                }
+
+                .background-sucursal:nth-child(2){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 5.jpg);
+                }
+
+                .background-sucursal:nth-child(3){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 6.jpg);
+                }
+            }
+
+            >div:nth-child(3){
+
+                .background-sucursal:nth-child(1){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 7.jpg);
+                }
+
+                .background-sucursal:nth-child(2){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 8.jpg);
+                }
+
+                .background-sucursal:nth-child(3){
+                    background-image: url(../img/Restaurantes/iPhone/Restaurante\ 9.jpg);
+                }
+            }
+        }
+    }
+
+    .formulario{
+        height: 133.92em;
+
+        .imagen-formulario,
+        .datos-formulario{
+            display: none;
+        }
+
+        .formulario-movil{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/Formulario/iPhone/imagen-formulario.jpg);
+            background-position: center;
+            background-size: cover;
+
+            .datos-formulario-movil{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(83, 83, 83, .64);
+                color: white;
+
+                h3{
+                    margin-bottom: 8.88%;
+                    font-size: 4.46em;
+                    font-weight: 700;
+                    letter-spacing: .1rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                .form-movil{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 59.77%;
+
+                    .parte-superior{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 56.76%;
+                        height: 43.49%;
+
+                        .nombre,
+                        .correo{
+                            height: 37.06%;
+
+                            label{
+                                display: block;
+                                margin-bottom: 3.71%;
+                                font-size: 3.27em;
+                            }
+    
+                            input{
+                                width: 100%;
+                                height: 46.51%;
+                                border: none;
+                            }
+                        }
+                    }
+
+                    .parte-inferior{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 80.67%;
+                        height: 15.24%;
+
+                        >div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 29.94%;
+                            height: 100%;
+                        }
+
+                        label{
+                            font-size: 2.97em;
+                        }
+
+                        input{
+                            width: 100%;
+                            height: 43.9%;
+                            font-size: 2.97em;
+                            border: none;
+                        }
+
+                        select{
+                            width: 100%;
+                            height: 43.9%;
+                            font-size: 2.97em;
+                            border: none;
+                        }
+                    }
+
+                    input[type="submit"]{
+                        padding: 1.2% 3.62% 1.2% 3.62%;
+                        font-size: 4.16em;
+                        color: white;
+                        text-transform: uppercase;
+                        border: none;
+                        border-radius: 100px;
+                        background-color: black;
+
+                        &:hover{
+                            background-color: red;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        height: 35.71em;
+
+        ul{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+            width: 81.88%;
+            height: 27.5%;
+            font-size: 8px;
+
+            li{
+                margin: 0em 2em 0em 2em;
+            }
+        }
+
+        p{
+            
+            font-size: 8px;
+        }
+    }
+}
